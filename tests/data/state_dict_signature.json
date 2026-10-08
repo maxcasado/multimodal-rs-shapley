@@ -1,0 +1,1610 @@
+{
+ "_source": "state_dict keys and shapes of the paper's trained checkpoints (fold 0)",
+ "CoM": {
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   12,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S2_S2VI.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.S2_S2VI.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S1.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S1.0.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.S1.0.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.S1.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.S1.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.weather.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.weather.0.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.weather.0.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.weather.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.weather.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.DEM.0.pre_encoder.layers.0.0.weight": [
+   128,
+   2
+  ],
+  "view_encoders.DEM.0.pre_encoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.0.linear_layer.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.DEM.0.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.DEM.0.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.DEM.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.DEM.1.linear_layer.bias": [
+   2
+  ],
+  "criteria.weight": [
+   2
+  ]
+ },
+ "EmbraceNet": {
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   12,
+   5
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S2_S2VI.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S2_S2VI.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S1.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S1.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S1.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S1.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S1.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S1.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S1.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S1.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S1.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S1.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.S1.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.weather.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.weather.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.weather.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.weather.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.weather.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.weather.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.weather.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.weather.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.weather.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.weather.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.weather.norm_layer.bias": [
+   128
+  ],
+  "view_encoders.DEM.pre_encoder.layers.0.0.weight": [
+   128,
+   2
+  ],
+  "view_encoders.DEM.pre_encoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.linear_layer.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.DEM.norm_layer.weight": [
+   128
+  ],
+  "view_encoders.DEM.norm_layer.bias": [
+   128
+  ],
+  "fusion_module.docking.0.weight": [
+   128,
+   128
+  ],
+  "fusion_module.docking.0.bias": [
+   128
+  ],
+  "fusion_module.docking.1.weight": [
+   128,
+   128
+  ],
+  "fusion_module.docking.1.bias": [
+   128
+  ],
+  "fusion_module.docking.2.weight": [
+   128,
+   128
+  ],
+  "fusion_module.docking.2.bias": [
+   128
+  ],
+  "fusion_module.docking.3.weight": [
+   128,
+   128
+  ],
+  "fusion_module.docking.3.bias": [
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "prediction_head.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "prediction_head.linear_layer.weight": [
+   2,
+   128
+  ],
+  "prediction_head.linear_layer.bias": [
+   2
+  ],
+  "criteria.weight": [
+   2
+  ]
+ },
+ "DSensDp_noLN": {
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   12,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S2_S2VI.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.S2_S2VI.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S1.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.S1.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.S1.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.weather.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.weather.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.weather.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.DEM.0.pre_encoder.layers.0.0.weight": [
+   128,
+   2
+  ],
+  "view_encoders.DEM.0.pre_encoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.0.linear_layer.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.DEM.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.DEM.1.linear_layer.bias": [
+   2
+  ],
+  "criteria.weight": [
+   2
+  ]
+ },
+ "DSensDp": {
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   12,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S2_S2VI.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S2_S2VI.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.S2_S2VI.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.S2_S2VI.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.S2_S2VI.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.S2_S2VI.1.norm_layer.weight": [
+   2
+  ],
+  "view_encoders.S2_S2VI.1.norm_layer.bias": [
+   2
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.S1.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.S1.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.S1.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.S1.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.S1.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.S1.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.S1.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.S1.1.norm_layer.weight": [
+   2
+  ],
+  "view_encoders.S1.1.norm_layer.bias": [
+   2
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.0.weight": [
+   128,
+   2,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.0.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.1.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.0.weight": [
+   128,
+   128,
+   5
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.0.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.weight": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.bias": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.running_mean": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.running_var": [
+   128
+  ],
+  "view_encoders.weather.0.pre_encoder.conv_layers.2.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.pre_encoder.dense.block.0.weight": [
+   512,
+   1536
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.0.bias": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.weight": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.bias": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.running_mean": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.running_var": [
+   512
+  ],
+  "view_encoders.weather.0.pre_encoder.dense.block.1.num_batches_tracked": [],
+  "view_encoders.weather.0.linear_layer.weight": [
+   128,
+   512
+  ],
+  "view_encoders.weather.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.weather.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.weather.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.weather.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.weather.1.norm_layer.weight": [
+   2
+  ],
+  "view_encoders.weather.1.norm_layer.bias": [
+   2
+  ],
+  "view_encoders.DEM.0.pre_encoder.layers.0.0.weight": [
+   128,
+   2
+  ],
+  "view_encoders.DEM.0.pre_encoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.0.linear_layer.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.0.linear_layer.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.0.weight": [
+   128,
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.0.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.weight": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.bias": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.running_mean": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.running_var": [
+   128
+  ],
+  "view_encoders.DEM.1.pre_decoder.layers.0.2.num_batches_tracked": [],
+  "view_encoders.DEM.1.linear_layer.weight": [
+   2,
+   128
+  ],
+  "view_encoders.DEM.1.linear_layer.bias": [
+   2
+  ],
+  "view_encoders.DEM.1.norm_layer.weight": [
+   2
+  ],
+  "view_encoders.DEM.1.norm_layer.bias": [
+   2
+  ],
+  "criteria.weight": [
+   2
+  ]
+ }
+}

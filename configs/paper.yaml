@@ -1,0 +1,94 @@
+# configs/paper.yaml — every parameter of the paper's pipeline, in one place.
+# Paths are relative to the repository root. `--smoke` deep-merges the `smoke` block below.
+
+data:
+  dir: data
+  name: cropharvest_binary                  # data/cropharvest_binary.nc + data/stats/stats_cropharvest_binary.nc
+  views: [S2_S2VI, S1, weather, DEM]        # S2_S2VI = the 11 S2 bands + NDVI, concatenated per date
+
+cv:
+  seed: 10                                  # np.random.seed(10), shuffle the identifiers, 5 contiguous folds
+  k: 5
+folds: [0, 1, 2, 3, 4]
+
+train_seed: 0                               # pl.seed_everything(train_seed + fold) before each training
+
+runs_dir: runs                              # weights, v-dicts, PS, per-sample caches (git-ignored)
+out_dir: paper_outputs                      # every figure / table / number of the paper
+
+models:
+  CoM:          {config: configs/models/CoM.yaml,          draws: 1}
+  EmbraceNet:   {config: configs/models/EmbraceNet.yaml,   draws: 20}    # stochastic fusion: R draws per coalition
+  DSensDp_noLN: {config: configs/models/DSensDp_noLN.yaml, draws: 1, logit64: true}
+  DSensDp:      {config: configs/models/DSensDp.yaml,      draws: 1, logit64: true}
+
+experiments:
+  main:                                     # one model per fold, clean data
+    models: [CoM, EmbraceNet, DSensDp_noLN, DSensDp]
+    ps: true                                # permutation Perceptual Score
+    ps_seed: 0                              # numpy seed = ps_seed + fold
+    local: true                             # per-sample games (local maps, local analysis)
+  noise:                                    # Gaussian noise on the z-scored S2 input, train AND test, retrained per sigma
+    models: [CoM, EmbraceNet]
+    target: S2_S2VI
+    levels: [0.0, 0.1, 0.25, 0.5, 1.0, 2.0, 5.0]
+    seed_offset: 999983                     # noise seed = offset + 7919 * fold + round(1e4 * sigma) + sample position
+    ps: true
+    ps_seed: 424242
+  cloud_gap:                                # k of the 12 S2 dates dropped and linearly re-interpolated, retrained per k
+    models: [CoM, EmbraceNet]
+    target: S2_S2VI
+    seq_len: 12
+    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    seed_offset: 20250831                   # per-sample drop order seeded by offset + crc32(identifier)
+    ps: false
+
+perceptual_score:
+  n_perm: 10
+  metric: f1_weighted
+
+inference:
+  seed: 0                                   # torch.manual_seed(seed + fold) before the stochastic draws
+  logit64_batch_size: 2048                  # float64 re-inference of the DSensD+ logits (closed-form check)
+  stochastic_batch_size: 2048               # batch of the R draws of a stochastic model (EmbraceNet)
+
+report:
+  global_models: [CoM, EmbraceNet]          # the models of the global games, sweeps and tables
+  overview:                                 # metrics_global table + local maps of every model, in this order
+    CoM: CoM
+    EmbraceNet: EmbraceNet
+    DSensDp: DSensD+
+    DSensDp_noLN: DSensD+ (no logit LN)
+
+local_analysis:                             # supplementary per-sample analyses (paper_outputs/local_analysis)
+  v_empty: 0.5                              # uniform prior of the per-sample game
+  models:                                   # row order of every figure
+    CoM:          {label: CoM}
+    EmbraceNet:   {label: EmbraceNet}
+    DSensDp_noLN: {label: DSensD+ (no LN)}
+    DSensDp:      {label: DSensD+ (LN), quantised: true}
+  grid: {res: 2.0, n_min: 5, min_per_fold: 1, sign_k: 4}
+  colour: {vmax_q: 99}
+  moran: {permutations: 199, seed: 0}
+  tolerances: {efficiency: 1.0e-6, closed_form: 1.0e-6, quantisation_round: 1.0e-3}
+  comparisons: [[EmbraceNet, CoM], [DSensDp_noLN, CoM], [DSensDp, DSensDp_noLN]]
+  closed_form_models: [DSensDp_noLN, DSensDp]
+  agreement_models: [DSensDp_noLN, DSensDp]
+
+# ── `--smoke`: the whole pipeline in minutes, on a 3,000-sample subset ──────────────────
+# The numbers it produces are meaningless; it only proves that every stage runs.
+smoke:
+  n_samples: 3000
+  max_epochs: 1
+  folds: [0, 1]
+  runs_dir: runs_smoke
+  out_dir: paper_outputs_smoke
+  models:
+    EmbraceNet: {draws: 2}
+  experiments:
+    noise: {levels: [0.0, 1.0, 2.0, 5.0]}
+    cloud_gap: {levels: [0, 11, 12]}
+  perceptual_score: {n_perm: 2}
+  local_analysis:
+    grid: {n_min: 2, sign_k: 2}
+    moran: {permutations: 19}

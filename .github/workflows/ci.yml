@@ -1,0 +1,13 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.10"}
+      - run: |
+          sed -e '/extra-index-url/d' -e 's/torch==2.0.0+cu118/torch==2.0.0/' requirements.txt > req-cpu.txt
+          pip install --extra-index-url https://download.pytorch.org/whl/cpu -r req-cpu.txt
+      - run: python -m pytest -q

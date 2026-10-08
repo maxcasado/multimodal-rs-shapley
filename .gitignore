@@ -1,0 +1,13 @@
+# inputs (python -m shapfusion download)
+/data/
+# everything the pipeline produces
+/runs/
+/runs_smoke/
+/paper_outputs/
+/paper_outputs_smoke/
+/logs/
+lightning_logs/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/

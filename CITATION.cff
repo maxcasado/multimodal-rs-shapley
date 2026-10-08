@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "shapley-fusion-cropharvest: reproduction code"
+type: software
+authors:
+  - family-names: Casado          # TODO: complete the author list
+    given-names: Max
+repository-code: "https://github.com/maxcasado/shapley-fusion-cropharvest"   # TODO: final URL
+preferred-citation:
+  type: article
+  title: "TODO: title of the paper"
+  authors:
+    - family-names: Casado        # TODO
+      given-names: Max
+  journal: "TODO"
+  year: 2026

@@ -1,0 +1,17 @@
+[project]
+name = "shapfusion"
+version = "1.0.0"
+description = "Shapley attribution of the sensors of multi-sensor crop classifiers (CropHarvest): reproduction code"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["shapfusion*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

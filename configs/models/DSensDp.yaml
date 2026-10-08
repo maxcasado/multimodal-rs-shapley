@@ -1,0 +1,31 @@
+# DSensD+ exactly as the reference code (fmenat/DSensDp @ 9d8c2ba): same as DSensDp_noLN.yaml
+# but each branch ends with a LayerNorm over its 2 logits (use_norm_last: true). With C = 2
+# that LayerNorm outputs ±(1, -1) whatever the input, its Jacobian is zero almost everywhere
+# and the branches do not train: kept only to reproduce the paper's "DSensD+ (LN)" row.
+# Exactly the recipe of the paper's runs (only paths removed).
+task_type: classification
+training:
+  max_epochs: 100
+  batch_size: 256
+  emb_dim: 128
+  early_stop_args: {min_delta: 0.01, mode: min, patience: 5}
+  parallel_processes: 1
+  missing_as_aug: true
+  missing_method: {name: ignore, random_perc: 0.5}
+  additional_args:
+    optimizer: adam
+    lr: 0.001
+    weights_loss_variations: {main: 1, full: 1, individual_sd: 1, individual: 1, cross_temp: 0.5}
+  loss_args: {name: ce}
+preprocess: {fillnan: false, flatten: false, form: zscore}
+architecture:
+  encoders:
+    S2_S2VI: {model_type: tempcnn, dropout: 0.2, kernel_size: 5, layer_size: 128, n_layers: 2, seq_len: 12, use_norm: false}
+    S1:      {model_type: tempcnn, dropout: 0.2, kernel_size: 5, layer_size: 128, n_layers: 2, seq_len: 12, use_norm: false}
+    weather: {model_type: tempcnn, dropout: 0.2, kernel_size: 5, layer_size: 128, n_layers: 2, seq_len: 12, use_norm: false}
+    DEM:     {model_type: mlp, n_layers: 1, layer_size: 128, dropout: 0.2, batchnorm: false, use_norm: false}
+  predictive_model: {n_layers: 1, layer_size: 128, dropout: 0.2, batchnorm: true, use_norm_last: true}
+method:
+  feature: false
+  agg_args: {mode: avg, adaptive: false}
+  dsensd_plus: {faithful_single_view: true}
