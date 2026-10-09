@@ -1,6 +1,6 @@
 # shapley-fusion-cropharvest
 
-Reproduction code for the paper **TODO: title** (TODO: authors, venue, year).
+Reproduction code for the paper Shapley Values for Modality Attribution in Robust Multimodal Remote Sensing Models
 
 The paper measures how much each sensor contributes to multi-sensor crop / non-crop
 classifiers on [CropHarvest](https://github.com/nasaharvest/cropharvest). The four sensors
@@ -13,7 +13,7 @@ studied at two levels:
 
 Two S2 degradations are studied: Gaussian noise and cloud gaps.
 
-This repository starts from the raw (preprocessed) data. It trains every model, computes
+This repository starts from the preprocessed data. It trains every model, computes
 every game and regenerates **every figure, table and number** of the paper. No trained
 weights are distributed: the pipeline trains them. A full run takes about 11 GPU-hours.
 
@@ -113,28 +113,6 @@ CUDA_VISIBLE_DEVICES=1 make cloud                          # second GPU, in para
 - **Cross-fold statistics.** Every reported value is mean ± std (ddof = 1) over the 5 folds.
   Values with |mean/std| < 2 are flagged *unresolved* (hollow markers, † in tables, n.r. in text).
 
-## Compute
-
-Measured per job on one NVIDIA RTX A4500 (20 GB), 32 CPU cores:
-
-| Model | train | vdict | ps |
-|---|---|---|---|
-| CoM | 1.5–2.5 min | 15 s | 55 s |
-| EmbraceNet (R = 20 draws) | ~2 min | 20 s | 55 s |
-| DSensD+ (both variants) | ~1 min | 10 s | 35 s |
-
-Estimated wall-clock time from these per-job measurements:
-
-| Step | Jobs | 1 GPU |
-|---|---|---|
-| `make main` | 20 | ~1 h |
-| `make noise` | 70 | ~4 h |
-| `make cloud` | 130 | ~5.5 h |
-| `make figures` | — | ~30 min (CPU; the local analyses take most of it) |
-| **total** | 220 | **~11 h** (~6 h with 2 GPUs: `noise` and `cloud` in parallel) |
-
-Disk: ~3 GB in `runs/` (one 12.7 MB checkpoint per job). `make smoke` takes ~3 min of
-training + ~12 min of report.
 
 ## Reproducibility notes
 
