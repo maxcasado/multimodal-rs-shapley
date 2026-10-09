@@ -5,6 +5,7 @@
 #   make noise    Gaussian-noise sweep on S2, retrained per sigma  (GPU)
 #   make cloud    cloud-gap sweep on S2, retrained per level       (GPU)
 #   make figures  every figure / table / number -> paper_outputs/  (CPU)
+#   make geojson  only the local Shapley values -> shapley_local.geojson (also done by figures)
 #   make all      data + main + noise + cloud + figures
 #   make test     unit tests (no data needed)
 # Two GPUs: run e.g. `CUDA_VISIBLE_DEVICES=0 make noise` and `CUDA_VISIBLE_DEVICES=1 make cloud`
@@ -12,7 +13,7 @@
 PYTHON ?= python3
 SF = $(PYTHON) -m shapfusion
 
-.PHONY: data smoke main noise cloud train figures all test status
+.PHONY: data smoke main noise cloud train figures geojson all test status
 
 data:
 	$(SF) download
@@ -34,6 +35,9 @@ train: main noise cloud
 
 figures:
 	$(SF) report
+
+geojson:
+	$(SF) report --only I
 
 all: data train figures
 

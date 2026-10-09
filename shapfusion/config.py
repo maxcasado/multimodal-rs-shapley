@@ -12,6 +12,7 @@ Artefacts of one job = (model, experiment, level, fold):
         local.npz     per-sample v(S) of the 16 coalitions        (experiments with local: true)
 
 with <level> = sigma_<s> (noise) or k_<kk> (cloud_gap), no level for ``main``.
+The per-sample Shapley values are also exported to <root>/shapley_local.geojson (``geojson``).
 """
 from __future__ import annotations
 
@@ -42,6 +43,7 @@ def load(path=None, smoke: bool = False, runs_dir=None, out_dir=None) -> dict:
     cfg["data_path"] = ROOT / cfg["data"]["dir"]
     cfg["runs_path"] = ROOT / (runs_dir or cfg["runs_dir"])
     cfg["out_path"] = ROOT / (out_dir or cfg["out_dir"])
+    cfg["geojson_path"] = ROOT / cfg["geojson"]["path"]
     return cfg
 
 

@@ -41,7 +41,7 @@ def _parser():
     r.add_argument("--dry-run", action="store_true")
     sub.add_parser("status", parents=[common, filters], help="done / missing stages")
     rep = sub.add_parser("report", parents=[common], help="figures, tables, numbers")
-    rep.add_argument("--only", nargs="+", choices=list("ABCDEFGH"))
+    rep.add_argument("--only", nargs="+", choices=list("ABCDEFGHI"))
     return p
 
 

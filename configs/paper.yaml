@@ -75,6 +75,11 @@ local_analysis:                             # supplementary per-sample analyses 
   closed_form_models: [DSensDp_noLN, DSensDp]
   agreement_models: [DSensDp_noLN, DSensDp]
 
+geojson:                                    # per-sample local Shapley values, one point per sample (report step I)
+  path: shapley_local.geojson               # relative to the repository root, versioned
+  models: [CoM, EmbraceNet]                 # the models of the paper's local maps
+  decimals: 4                               # rounding of phi
+
 # ── `--smoke`: the whole pipeline in minutes, on a 3,000-sample subset ──────────────────
 # The numbers it produces are meaningless; it only proves that every stage runs.
 smoke:
@@ -92,3 +97,4 @@ smoke:
   local_analysis:
     grid: {n_min: 2, sign_k: 2}
     moran: {permutations: 19}
+  geojson: {path: paper_outputs_smoke/shapley_local.geojson}   # never overwrite the versioned file

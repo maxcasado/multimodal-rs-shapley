@@ -16,6 +16,8 @@ Two S2 degradations are studied: Gaussian noise and cloud gaps.
 This repository starts from the preprocessed data. It trains every model, computes
 every game and regenerates **every figure, table and number** of the paper. No trained
 weights are distributed: the pipeline trains them. A full run takes about 11 GPU-hours.
+The paper's per-sample Shapley values are distributed in
+[`shapley_local.geojson`](#local-shapley-values-geojson) at the repository root.
 
 ```bash
 pip install -r requirements.txt      # Python 3.10, CUDA 11.8 (see requirements.txt for CPU)
@@ -45,9 +47,31 @@ Every figure, table and number then sits in `paper_outputs/`.
 | Every number quoted in the text | `numbers/report_numbers.{md,json}`, `numbers/interactions_local.md` | F |
 | Accuracy / f1 of the four models; local maps of all four | `tables/table_metrics_global.txt`, `figures/models_overview/` | G |
 | Supplementary local analyses (robustness, model comparison, value functions, missing sensors, hypotheses, interaction decomposition) | `local_analysis/p0_checks … p5_interactions/`, `local_analysis/VALUE_FUNCTION.md` | H |
+| Local Shapley values of every sample, CoM and EmbraceNet (GeoJSON) | `shapley_local.geojson`, at the repository root | I |
 
 The CSV/JSON data behind every figure is in `paper_outputs/data/`.
 `python -m shapfusion report --only A B` regenerates a subset.
+
+## Local Shapley values (GeoJSON)
+
+[`shapley_local.geojson`](shapley_local.geojson) holds the values behind the paper's local maps:
+one point (lon/lat, WGS84) per CropHarvest sample, 69,800 in all, each explained by the model of
+its test fold.
+
+| Property | Meaning |
+|---|---|
+| `identifier`, `fold`, `y_true` | CropHarvest identifier, test fold, label (1 = crop) |
+| `<model>_yhat` | class predicted with the four sensors, `<model>` ∈ {`CoM`, `EmbraceNet`} |
+| `<model>_phi_<sensor>` | local φ of the sensor, `<sensor>` ∈ {`S2`, `S1`, `weather`, `DEM`}, 4 decimals |
+
+The game is the local game defined below, so φ > 0 means the sensor supports the class the model
+predicts, and the four φ of a model sum to P(ŷ_full | x) − 0.5. The file opens in QGIS or with
+`geopandas.read_file("shapley_local.geojson")`.
+
+The versioned file comes from the paper's runs. `make geojson` (step I of the report, also run by
+`make figures`) rewrites it from the artefacts in `runs/`: after a retraining it holds the values
+of the new run, not those of the paper (`git checkout shapley_local.geojson` restores them).
+With `--smoke` it is written to `paper_outputs_smoke/` instead.
 
 ## Models
 
@@ -147,9 +171,10 @@ shapfusion/
   models/                   encoders, fusions, DSensD+, model builder
   shapley/                  games, Shapley values / interactions, v(∅), Perceptual Score
   analysis/                 global games, house plot style, map helpers
-  report/                   deliverables A–G
+  report/                   deliverables A–G, I
   local_analysis/           deliverable H (P0 checks, P1–P5)
 tests/                      unit tests (no data needed): pytest -q
+shapley_local.geojson       the paper's local Shapley values, one point per sample (deliverable I)
 ```
 
 ## Data

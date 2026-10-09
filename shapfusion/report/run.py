@@ -9,6 +9,7 @@ Every deliverable of the paper from the artefacts in runs/ (CPU only, no model i
     F  numbers of the text     numbers/report_numbers.{json,md}
     G  the four models         tables/table_metrics_global.txt, figures/models_overview/
     H  local analyses          local_analysis/ (P0 checks, P1-P5)
+    I  local Shapley values    <root>/shapley_local.geojson (versioned, see report/geojson.py)
 """
 import time
 
@@ -24,6 +25,7 @@ DELIVERABLES = {
     "F": ("numbers of the text", "numbers"),
     "G": ("the four models", "models_overview"),
     "H": ("local analyses", None),
+    "I": ("GeoJSON of the local Shapley values", "geojson"),
 }
 
 
@@ -43,7 +45,8 @@ def inputs(cfg, key) -> list:
             "E": _files(cfg, gm, ["main"], ["local.npz"]),
             "F": _files(cfg, gm, sweeps, ["vdict.pkl"]) + _files(cfg, gm, ["main", "noise"], ["ps.csv"]),
             "G": _files(cfg, list(cfg["report"]["overview"]), ["main"], ["metrics.json", "local.npz"]),
-            "H": _files(cfg, list(cfg["local_analysis"]["models"]), ["main"], ["vdict.pkl", "local.npz"])}[key]
+            "H": _files(cfg, list(cfg["local_analysis"]["models"]), ["main"], ["vdict.pkl", "local.npz"]),
+            "I": _files(cfg, cfg["geojson"]["models"], ["main"], ["local.npz"])}[key]
 
 
 def run(cfg, only=None, log=print) -> dict:
